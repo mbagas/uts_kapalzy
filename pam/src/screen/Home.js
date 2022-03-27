@@ -172,6 +172,11 @@ const Home = ({navigation}) => {
               </TouchableOpacity>
             </View>
           </View>
+          <View style={{alignItems: 'center'}}>
+            <Text style={{color: 'black'}}>
+              Copyright Muksin Bagaskara - 119140167
+            </Text>
+          </View>
         </View>
       </KeyboardAvoidingView>
     </SafeAreaView>
@@ -184,7 +189,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   container: {
-    backgroundColor: '#88b454',
+    backgroundColor: '#C8C6C6',
     height: '100%',
   },
   formContainer: {

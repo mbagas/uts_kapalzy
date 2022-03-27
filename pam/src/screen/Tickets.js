@@ -43,10 +43,6 @@ import Moment from 'moment';
 // );
 
 const Confirm = ({navigation}) => {
-  let filteredTiket = TIKET.filter(x => {
-    return x.status == 'aktif';
-  });
-  console.log(filteredTiket);
   const detail = id => {
     console.log(id, 'asd');
     navigation.navigate('TicketDetail', {
@@ -145,7 +141,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   container: {
-    backgroundColor: '#88b454',
+    backgroundColor: '#C8C6C6',
     height: '100%',
   },
   ticketContainer: {
@@ -232,8 +228,8 @@ const styles = StyleSheet.create({
   harbourText: {
     color: 'black',
     fontWeight: 'bold',
-    marginHorizontal: 35,
-    fontSize: 20,
+    marginHorizontal: 15,
+    fontSize: 17,
   },
   ticketContent: {
     borderBottomColor: 'black',

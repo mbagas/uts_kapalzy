@@ -22,7 +22,6 @@ import Moment from 'moment';
 // import RNPickerSelect from 'react-native-picker-select';
 
 const Confirm = ({navigation, route}) => {
-  console.warn(TIKET.length);
   const [nama, setNama] = useState();
   const [jk, setJk] = useState();
   const [umur, setUmur] = useState();
@@ -105,11 +104,13 @@ const Confirm = ({navigation, route}) => {
             }}>
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Text style={styles.textBtnTgl}>Hello World!</Text>
+                <Text style={styles.textBtnTgl}>
+                  Silahkan Bayar ke Rek 119140167
+                </Text>
                 <Pressable
                   style={[styles.button, styles.buttonClose]}
                   onPress={exit}>
-                  <Text style={styles.textStyle}>Hide Modal</Text>
+                  <Text style={styles.textStyle}>Kembali</Text>
                 </Pressable>
               </View>
             </View>
@@ -152,6 +153,17 @@ const Confirm = ({navigation, route}) => {
                   <Text style={styles.ticketText}>Rp 65.000,00</Text>
                 </View>
               </View>
+              <Text
+                style={{
+                  color: 'black',
+                  paddingVertical: 10,
+                  fontWeight: 'bold',
+                  alignItems: 'center',
+                  fontSize: 20,
+                  paddingHorizontal: 10,
+                }}>
+                Data Pemesan
+              </Text>
               <View style={styles.fieldContainer}>
                 <Input
                   type="text"
@@ -164,6 +176,7 @@ const Confirm = ({navigation, route}) => {
                   autoCompleteType="off"
                 />
               </View>
+
               <View style={styles.fieldContainer}>
                 <Input
                   type="text"
@@ -208,7 +221,7 @@ const styles = StyleSheet.create({
     height: '100%',
   },
   container: {
-    backgroundColor: '#88b454',
+    backgroundColor: '#C8C6C6',
     height: '100%',
   },
   ticketContainer: {
@@ -295,8 +308,8 @@ const styles = StyleSheet.create({
   harbourText: {
     color: 'black',
     fontWeight: 'bold',
-    marginHorizontal: 35,
-    fontSize: 20,
+    marginHorizontal: 15,
+    fontSize: 17,
   },
   ticketContent: {
     borderBottomColor: 'black',

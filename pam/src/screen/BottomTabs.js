@@ -4,6 +4,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Stack from './Stack';
 import Tickets from './Tickets';
 import Cancellations from './Cancellations';
+import Other from './Other';
 import FontAwesome from 'react-native-vector-icons/FontAwesome5';
 const Tab = createBottomTabNavigator();
 
@@ -43,11 +44,26 @@ const MyTabs = () => {
       <Tab.Screen
         name="Cancellations"
         component={Cancellations}
-        tabBarLabel="Cancellations}"
+        tabBarLabel="Cancellations"
         color="#11468F"
         options={{
           tabBarIcon: ({focused}) => (
-            <FontAwesome name="receipt" size={22} color="#11468F" />
+            <FontAwesome name="book" size={22} color="#11468F" />
+          ),
+          tabBarLabelStyle: {
+            fontSize: 13,
+          },
+          headerShown: false,
+        }}
+      />
+      <Tab.Screen
+        name="Other"
+        component={Other}
+        tabBarLabel="Other"
+        color="#11468F"
+        options={{
+          tabBarIcon: ({focused}) => (
+            <FontAwesome name="user" size={22} color="#11468F" />
           ),
           tabBarLabelStyle: {
             fontSize: 13,

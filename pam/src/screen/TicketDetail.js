@@ -23,6 +23,7 @@ const Confirm = ({navigation, route}) => {
 
   const onSubmit = () => {
     ticket.status = 'batal';
+    navigation.navigate('Tickets');
     // console.log(ticket.status);
     // console.log(TIKET);
   };
@@ -81,7 +82,7 @@ const Confirm = ({navigation, route}) => {
             </View>
             <View style={styles.fieldContainer}>
               <TouchableOpacity style={styles.button} onPress={onSubmit}>
-                <Text style={styles.textButton}>Buat Ticket</Text>
+                <Text style={styles.textButton}>Batalkan Tiket</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -97,7 +98,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   container: {
-    backgroundColor: '#88b454',
+    backgroundColor: '#C8C6C6',
     height: '100%',
   },
   ticketContainer: {
@@ -137,8 +138,8 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   button: {
-    backgroundColor: 'orange',
-    color: 'orange',
+    backgroundColor: '#FF1818',
+    color: '#FF1818',
     borderRadius: 15,
     height: 40,
     alignItems: 'center',
@@ -184,8 +185,8 @@ const styles = StyleSheet.create({
   harbourText: {
     color: 'black',
     fontWeight: 'bold',
-    marginHorizontal: 35,
-    fontSize: 20,
+    marginHorizontal: 15,
+    fontSize: 17,
   },
   ticketContent: {
     borderBottomColor: 'black',

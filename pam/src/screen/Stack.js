@@ -17,7 +17,7 @@ const ScreenStack = () => {
         headerTitleAlign: 'center',
         headerTintColor: 'white',
         headerStyle: {
-          backgroundColor: '#88b454',
+          backgroundColor: '#11468F',
         },
       }}>
       <Stack.Screen
